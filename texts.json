@@ -162,5 +162,341 @@
     {
         "cat": "avontuur",
         "text": "Om middernacht, precies om 0 uur, opende de grot zich vanzelf. Binnenin klonk een zacht gezoem, alsof duizend bijen samen een lied zongen."
+    },
+    {
+        "cat": "dieren",
+        "text": "Een zeepaardje is het enige dier waarbij de vader de eitjes draagt. Hij kan wel 1.000 eitjes tegelijk vervoeren in zijn buikzak."
+    },
+    {
+        "cat": "dieren",
+        "text": "Olifanten kunnen elkaar horen praten op meer dan 8 kilometer afstand. Ze gebruiken lage trillingen die wij mensen niet eens kunnen horen."
+    },
+    {
+        "cat": "dieren",
+        "text": "Een kolibrie klapwiekt wel 50 keer per seconde. Daardoor kan hij stilhangen in de lucht en zelfs achteruit vliegen, iets wat bijna geen enkele andere vogel kan."
+    },
+    {
+        "cat": "dieren",
+        "text": "Krokodillen kunnen niet met hun tong bewegen, hij zit vastgeplakt aan hun onderkaak. Toch weten ze prima hun prooi te vangen."
+    },
+    {
+        "cat": "dieren",
+        "text": "Een otter houdt tijdens het slapen vaak de poot van een andere otter vast, zodat ze niet uit elkaar drijven op het water."
+    },
+    {
+        "cat": "dieren",
+        "text": "De poema kan wel 6 meter ver springen zonder aanloop. Dat is bijna net zo ver als een schoolbus lang is!"
+    },
+    {
+        "cat": "dieren",
+        "text": "Uilen kunnen hun hoofd tot 270 graden draaien, maar hun ogen kunnen ze helemaal niet bewegen in hun kassen."
+    },
+    {
+        "cat": "dieren",
+        "text": "Een schildpad kan soms wel 150 jaar oud worden. Sommige schildpadden op de Galapagoseilanden zijn ouder dan je overgrootouders."
+    },
+    {
+        "cat": "dieren",
+        "text": "Bijen communiceren met een dansje. Door de vorm en richting van hun dans vertellen ze de andere bijen precies waar de lekkerste bloemen staan."
+    },
+    {
+        "cat": "dieren",
+        "text": "Een pinguïn kan onder water wel 6 minuten zijn adem inhouden. Sommige soorten duiken dieper dan 500 meter op zoek naar vis."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Saturnus heeft prachtige ringen, maar ze zijn maar zo'n 10 meter dik. Vergeleken met de doorsnede van de planeet is dat bijna niets."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Een ruimtepak beschermt astronauten tegen temperaturen die kunnen oplopen van min 150 graden tot plus 120 graden Celsius, al naargelang de kant richting de zon."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Het licht van de zon doet er ongeveer 8 minuten over om de aarde te bereiken. Als de zon plots zou doven, zouden we dat pas 8 minuten later merken."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Er zijn meer sterren in het heelal dan zandkorrels op alle stranden van de aarde samen. Niemand weet precies hoeveel het er zijn."
+    },
+    {
+        "cat": "ruimte",
+        "text": "De maan verwijdert zich elk jaar zo'n 3,8 centimeter van de aarde. Over miljoenen jaren zal hij dus steeds kleiner aan de hemel lijken."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Een ruimtestation zoals het ISS reist met een snelheid van 28.000 kilometer per uur rond de aarde. Astronauten zien daardoor elke 90 minuten een zonsopgang."
+    },
+    {
+        "cat": "ruimte",
+        "text": "Neptunus is zo ver van de zon verwijderd dat het er tijdens de dag net zo donker is als bij ons tijdens de schemering."
+    },
+    {
+        "cat": "moppen",
+        "text": "Waarom kon de fiets niet op eigen benen staan? Omdat hij een beetje 2-wielig was ingesteld."
+    },
+    {
+        "cat": "moppen",
+        "text": "Wat zegt een boom tegen een andere boom in de herfst? Blijf je nog even hangen, of ga je er al vandoor?"
+    },
+    {
+        "cat": "moppen",
+        "text": "Waarom nam de banaan een paraplu mee? Omdat de voorspelling appelflauwte voorspelde."
+    },
+    {
+        "cat": "moppen",
+        "text": "Hoe noem je een stier die de hele dag slaapt? Een bulldozer."
+    },
+    {
+        "cat": "moppen",
+        "text": "Waarom ging de computer naar de dokter? Omdat hij een virus had opgelopen en zich niet lekker voelde."
+    },
+    {
+        "cat": "moppen",
+        "text": "Wat zei de een cijfer tegen het andere cijfer? Samen zijn we sterker dan 1!"
+    },
+    {
+        "cat": "moppen",
+        "text": "Waarom fluisteren pinguïns altijd? Omdat ze bang zijn dat de ijsschots hen anders hoort barsten."
+    },
+    {
+        "cat": "moppen",
+        "text": "Wat is groen en kan niet zwemmen? Een grasmaaier."
+    },
+    {
+        "cat": "verhaal",
+        "text": "Op een eiland ver weg woonde een vuurtoren die 's nachts zelf kon zingen. Elke schipper die het lied hoorde, vond zijn weg veilig terug naar de haven."
+    },
+    {
+        "cat": "verhaal",
+        "text": "De kleine robot Tik-Tak reisde door een fabriek vol tandwielen. Op dag 100 van zijn reis vond hij eindelijk de allerlaatste schroef die hij nodig had."
+    },
+    {
+        "cat": "verhaal",
+        "text": "In de tuin van oma groeide een appelboom met 9 takken, en op elke tak hing precies 1 gouden appel die nooit rot werd."
+    },
+    {
+        "cat": "verhaal",
+        "text": "De vlinder Zara vloog elke lente naar dezelfde weide, al 1.000 kilometer ver, gewoon om haar oude vriend de mol nog eens te zien."
+    },
+    {
+        "cat": "verhaal",
+        "text": "Onder de brug woonde een trol die niemand ooit had gezien. Sommigen zeiden dat hij 's nachts, om precies 3 uur, zachtjes viool speelde voor de vissen."
+    },
+    {
+        "cat": "verhaal",
+        "text": "De sneeuwpop Wibbel smolt elk jaar in maart, maar beloofde altijd terug te komen zodra de eerste sneeuwvlok in november viel."
+    },
+    {
+        "cat": "verhaal",
+        "text": "In het kasteel op de heuvel woonde een prinses die liever met draken speelde dan met poppen. Haar beste vriend was een draakje van amper 40 centimeter groot."
+    },
+    {
+        "cat": "sprookje",
+        "text": "Er was eens een molen die alleen draaide als er iemand een lied zong. De boeren van het dorp zongen om beurten, elke dag een ander liedje, van 8 tot 17 uur."
+    },
+    {
+        "cat": "sprookje",
+        "text": "Een kobold verzamelde verloren knopen in een grot vol schatten. Voor elke 100 knopen die hij vond, groeide er een nieuwe bloem op de heuvel boven de grot."
+    },
+    {
+        "cat": "sprookje",
+        "text": "De koning van het bos droeg een kroon van eikeltjes en regeerde alleen over de dieren die vriendelijk waren tegen elkaar."
+    },
+    {
+        "cat": "sprookje",
+        "text": "In een ver land groeide een boon die tot aan de wolken reikte. Boven in de wolken woonde geen reus, maar een familie van vriendelijke wolkenschapen."
+    },
+    {
+        "cat": "sprookje",
+        "text": "De heks van het moeras kookte geen giftige drankjes meer, maar chocolademelk voor alle kinderen die verdwaald waren in het bos."
+    },
+    {
+        "cat": "school",
+        "text": "Voor de gymles moesten we vandaag 20 keer touwtjespringen en daarna 4 rondjes lopen rond het schoolplein zonder te stoppen."
+    },
+    {
+        "cat": "school",
+        "text": "In de bibliotheek van de school staan meer dan 2.000 boeken. Mijn favoriet gaat over een detective die altijd om 15 uur zijn eerste aanwijzing vindt."
+    },
+    {
+        "cat": "school",
+        "text": "Volgende week gaan we op schoolreis naar de zoo. We vertrekken om 8 uur 's ochtends met 3 grote bussen vol kinderen."
+    },
+    {
+        "cat": "school",
+        "text": "Voor de knutselles hebben we elk 5 stukjes karton, 2 potjes verf en 1 rol plakband gekregen om een eigen raket te bouwen."
+    },
+    {
+        "cat": "school",
+        "text": "Bij muziekles leren we dit jaar blokfluit spelen. Meester zegt dat we na 6 weken oefenen al een heel liedje kunnen spelen."
+    },
+    {
+        "cat": "sport",
+        "text": "Bij basketbal moet de bal door een ring die 3,05 meter hoog hangt. Sommige spelers kunnen zelfs met 2 handen tegelijk dunken."
+    },
+    {
+        "cat": "sport",
+        "text": "Een voetbalwedstrijd duurt normaal 90 minuten, verdeeld in 2 helften van 45 minuten, met een korte pauze ertussen."
+    },
+    {
+        "cat": "sport",
+        "text": "Bij turnen train je kracht, lenigheid en evenwicht tegelijk. Topturners oefenen soms wel 30 uur per week om hun sprongen perfect te krijgen."
+    },
+    {
+        "cat": "sport",
+        "text": "Judo komt uit Japan en betekent zoiets als 'de zachte weg'. Toch kun je met de juiste techniek iemand die 2 keer je gewicht heeft, op de grond krijgen."
+    },
+    {
+        "cat": "sport",
+        "text": "Een skateboard heeft meestal 4 wieltjes en 2 assen. De eerste skateboards werden gemaakt door gewoon wieltjes onder een plank te schroeven."
+    },
+    {
+        "cat": "weetje",
+        "text": "Kauwgom bestaat al meer dan 5.000 jaar. Vroeger kauwden mensen op hars van bomen, lang voordat de eerste echte kauwgom werd gemaakt."
+    },
+    {
+        "cat": "weetje",
+        "text": "Een niesbui kan snelheden van meer dan 150 kilometer per uur bereiken. Daarom is het zo lastig om je ogen open te houden tijdens het niezen."
+    },
+    {
+        "cat": "weetje",
+        "text": "IJs is minder dicht dan water, daarom drijft het. Zonder die eigenschap zouden meren en zeeën van onder naar boven dichtvriezen."
+    },
+    {
+        "cat": "weetje",
+        "text": "Er passen ongeveer 100 miljoen bacteriën op een gemiddelde vinger. Toch is de meerderheid daarvan helemaal niet schadelijk."
+    },
+    {
+        "cat": "weetje",
+        "text": "Chocolade werd vroeger niet gegeten, maar gedronken. De Azteken maakten er een bitter drankje van, zo'n 3.000 jaar geleden."
+    },
+    {
+        "cat": "weetje",
+        "text": "Een dag op aarde duurt niet precies 24 uur, maar 23 uur, 56 minuten en 4 seconden. Het verschil merk je pas na heel veel jaren."
+    },
+    {
+        "cat": "weetje",
+        "text": "Vlinders proeven met hun pootjes. Zodra ze op een blad landen, weten ze meteen of het lekker genoeg is om er eitjes op te leggen."
+    },
+    {
+        "cat": "avontuur",
+        "text": "De brug over de kloof bestond uit maar 2 dikke touwen en een handvol losse planken. Elke stap moest je tellen: 1, 2, 3, tot je veilig aan de overkant stond."
+    },
+    {
+        "cat": "avontuur",
+        "text": "In de jungle klonk elk geluid 10 keer luider dan normaal. Timo telde 6 verschillende vogelgeluiden voor hij zelfs maar 100 meter had gelopen."
+    },
+    {
+        "cat": "avontuur",
+        "text": "De onderzeeër daalde af tot 200 meter diepte, waar geen zonlicht meer kwam. Alleen de lampjes van vreemde diepzeevissen verlichtten de duisternis."
+    },
+    {
+        "cat": "avontuur",
+        "text": "Op de top van de berg, na een klim van bijna 5 uur, zag Nina eindelijk de vallei die op geen enkele kaart stond."
+    },
+    {
+        "cat": "avontuur",
+        "text": "De piraten hadden de schatkaart in 4 stukken verdeeld, verstopt op 4 verschillende eilanden. Wie alle stukken vond, kreeg de sleutel tot de grot."
+    },
+    {
+        "cat": "eten",
+        "text": "Een pizza Margherita heeft de kleuren van de Italiaanse vlag: rode tomaat, witte mozzarella en groene basilicum, al meer dan 130 jaar een klassieker."
+    },
+    {
+        "cat": "eten",
+        "text": "Om 1 kilo honing te maken, moeten bijen samen wel 4.000 keer heen en weer vliegen tussen de korf en de bloemen."
+    },
+    {
+        "cat": "eten",
+        "text": "Popcorn springt open omdat er water in de korrel zit. Bij verhitting tot ongeveer 180 graden zet dat water uit tot stoom en 'poef', de korrel klapt open."
+    },
+    {
+        "cat": "eten",
+        "text": "De grootste taart ooit gebakken woog meer dan 8.000 kilo. Er was genoeg om duizenden mensen een stuk te geven."
+    },
+    {
+        "cat": "eten",
+        "text": "Wortels waren vroeger niet altijd oranje. Er bestonden ook paarse en gele wortels, tot boeren zo'n 400 jaar geleden de oranje soort populair maakten."
+    },
+    {
+        "cat": "muziek",
+        "text": "Een symfonieorkest bestaat soms uit meer dan 100 muzikanten die allemaal precies op hetzelfde moment moeten beginnen te spelen."
+    },
+    {
+        "cat": "muziek",
+        "text": "De piano heeft meestal 88 toetsen: 52 witte en 36 zwarte. Samen kun je er duizenden verschillende akkoorden mee spelen."
+    },
+    {
+        "cat": "muziek",
+        "text": "Een gitaar heeft meestal 6 snaren. Als je er 1 stemt, moet je vaak alle andere ook een beetje bijstellen."
+    },
+    {
+        "cat": "muziek",
+        "text": "Het langste lied dat je op de radio hoort duurt meestal maar 3 tot 4 minuten. Sommige klassieke stukken duren daarentegen wel 40 minuten."
+    },
+    {
+        "cat": "techniek",
+        "text": "De eerste computer nam een hele kamer in beslag en had minder rekenkracht dan de rekenmachine in je broekzak."
+    },
+    {
+        "cat": "techniek",
+        "text": "Een raket moet een snelheid van ongeveer 28.000 kilometer per uur bereiken om de zwaartekracht van de aarde te kunnen ontsnappen."
+    },
+    {
+        "cat": "techniek",
+        "text": "Robots op de bodem van de oceaan kunnen drukken weerstaan die 1.000 keer hoger zijn dan de luchtdruk die wij elke dag voelen."
+    },
+    {
+        "cat": "techniek",
+        "text": "Een simpele zaklamp bevat toch al minstens 4 onderdelen: een batterij, een schakelaar, een lampje en een reflector."
+    },
+    {
+        "cat": "geschiedenis",
+        "text": "De piramides van Egypte zijn al meer dan 4.500 jaar oud en werden gebouwd zonder de hulp van kranen of machines."
+    },
+    {
+        "cat": "geschiedenis",
+        "text": "Vroeger stuurden mensen berichten met postduiven. Een goed getrainde duif kon wel 100 kilometer per uur vliegen om nieuws te bezorgen."
+    },
+    {
+        "cat": "geschiedenis",
+        "text": "De eerste Olympische Spelen vonden al plaats in het jaar 776 voor Christus, in het oude Griekenland."
+    },
+    {
+        "cat": "geschiedenis",
+        "text": "In de middeleeuwen droegen ridders harnassen die soms wel 30 kilo wogen, bijna net zo zwaar als een grote hond."
+    },
+    {
+        "cat": "seizoenen",
+        "text": "In de winter kan een sneeuwvlok bestaan uit wel 200 piepkleine ijskristallen, en geen 2 vlokken zijn ooit precies hetzelfde."
+    },
+    {
+        "cat": "seizoenen",
+        "text": "In de lente maken zwaluwen soms een reis van meer dan 10.000 kilometer om terug te keren naar hun oude nest."
+    },
+    {
+        "cat": "seizoenen",
+        "text": "In de zomer kan het asfalt van de weg wel 20 graden warmer worden dan de lucht erboven."
+    },
+    {
+        "cat": "seizoenen",
+        "text": "In de herfst verliest een grote eik soms wel 200.000 bladeren, allemaal binnen een paar weken tijd."
+    },
+    {
+        "cat": "natuur",
+        "text": "Een regenwoud produceert een groot deel van de zuurstof die wij inademen, en huisvest tegelijk meer dan de helft van alle diersoorten op aarde."
+    },
+    {
+        "cat": "natuur",
+        "text": "De hoogste boom ter wereld is een sequoia van meer dan 115 meter hoog, hoger dan een gebouw van 30 verdiepingen."
+    },
+    {
+        "cat": "natuur",
+        "text": "Een vulkaan kan honderden jaren slapen voor hij weer uitbarst. Sommige vulkanen zijn al meer dan 1.000 jaar stil."
+    },
+    {
+        "cat": "natuur",
+        "text": "In de Sahara valt gemiddeld minder dan 25 millimeter regen per jaar, terwijl het in sommige regenwouden wel 10.000 millimeter kan zijn."
     }
 ]
