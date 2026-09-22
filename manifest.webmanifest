@@ -1,0 +1,37 @@
+{
+    "name": "Typekoning",
+    "short_name": "Typekoning",
+    "description": "Oefen typen op leuke teksten: juiste letters worden groen, foute rood. Verdien badges en versla je record!",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#0b3d5c",
+    "theme_color": "#0b3d5c",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

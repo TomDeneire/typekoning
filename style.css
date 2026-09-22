@@ -1,0 +1,528 @@
+:root {
+    --bg1: #0b3d5c;
+    --bg2: #1fb6a8;
+    --card: rgba(255, 255, 255, 0.14);
+    --text: #fff;
+    --accent: #ffd23f;
+    --good: #2ee59d;
+    --bad: #ff5c7a;
+    --radius: 22px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", "Comic Sans MS", system-ui, sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at 20% 10%, var(--bg2), var(--bg1) 70%);
+    background-attachment: fixed;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+body.shake {
+    animation: shake 0.5s;
+}
+body.shake-mini {
+    animation: shake-mini 0.25s;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: 0;
+}
+
+#fx {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.icon-btn {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 60;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--card);
+    font-size: 22px;
+}
+
+#app {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 16px;
+    min-height: 100%;
+}
+
+.screen {
+    display: none;
+}
+.screen.active {
+    display: block;
+    animation: pop 0.35s ease-out;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 12px 0 4px;
+    text-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+h2 {
+    font-size: 1rem;
+    margin: 0 0 8px;
+    opacity: 0.9;
+}
+.sub {
+    text-align: center;
+    margin: 0 0 16px;
+    opacity: 0.85;
+}
+
+.group {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+.durations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+.duration {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 12px 4px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    transition:
+        transform 0.15s,
+        background 0.15s;
+}
+.duration.active {
+    background: var(--accent);
+    color: #3a2200;
+    transform: scale(1.05);
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+.filter-toggle {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 10px 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0.55;
+    transition:
+        transform 0.15s,
+        background 0.15s,
+        opacity 0.15s;
+}
+.filter-toggle span {
+    display: block;
+    font-size: 1.6rem;
+}
+.filter-toggle.on {
+    background: var(--good);
+    color: #033;
+    opacity: 1;
+}
+.filter-toggle:active {
+    transform: scale(0.96);
+}
+
+.big-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: var(--radius);
+    background: linear-gradient(#ffe066, #ffb703);
+    color: #3a2200;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 0 6px 0 #c98700;
+    transition:
+        transform 0.1s,
+        box-shadow 0.1s;
+}
+.big-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #c98700;
+}
+.big-btn:disabled {
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+.big-btn.secondary {
+    background: linear-gradient(#7fe9de, #1fb6a8);
+    box-shadow: 0 6px 0 #0f7a6f;
+    color: #04302b;
+}
+
+.badges {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+.badge {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    padding: 8px 4px;
+    font-size: 0.72rem;
+}
+.badge .ico {
+    display: block;
+    font-size: 2rem;
+    filter: grayscale(1) brightness(0.6);
+}
+.badge.got .ico {
+    filter: none;
+}
+.badge.got {
+    background: rgba(255, 210, 63, 0.25);
+}
+.best {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Game */
+.hud {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 44px 0 8px;
+}
+.stat {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 6px 14px;
+    text-align: center;
+    min-width: 74px;
+}
+.stat small {
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+.stat b {
+    font-size: 1.8rem;
+}
+.timer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#time-bar {
+    flex: 1;
+    height: 18px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+    overflow: hidden;
+}
+#time-fill {
+    height: 100%;
+    width: 100%;
+    background: var(--good);
+    border-radius: 9px;
+    transition: background 0.3s;
+}
+#time {
+    font-size: 1.6rem;
+    min-width: 2ch;
+    text-align: right;
+}
+#time.low {
+    color: var(--bad);
+    animation: pulse 0.5s infinite alternate;
+}
+
+.next-badge {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    min-height: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.text-wrap {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: var(--radius);
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    padding: 18px;
+    margin-bottom: 12px;
+    height: 30vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.text-display {
+    font-size: clamp(1.2rem, 4.6vw, 1.8rem);
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    font-family: "Courier New", monospace;
+}
+.text-display span {
+    opacity: 0.55;
+    transition: opacity 0.1s;
+}
+.text-display span.ok {
+    color: var(--good);
+    opacity: 1;
+}
+.text-display span.bad {
+    color: var(--bad);
+    opacity: 1;
+    text-decoration: underline wavy var(--bad);
+}
+.text-display span.cur {
+    opacity: 1;
+    background: var(--accent);
+    color: #3a2200;
+    border-radius: 4px;
+    animation: pulse-cursor 1s infinite;
+}
+
+.type-input {
+    position: absolute;
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+    pointer-events: none;
+}
+
+.tap-hint {
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* End */
+.final {
+    text-align: center;
+    margin: 16px 0 4px;
+}
+.final b {
+    display: block;
+    font-size: 5rem;
+    color: var(--accent);
+    line-height: 1;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, 0.25);
+}
+.final-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 12px 0;
+}
+.final-stats div {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 10px 4px;
+    text-align: center;
+}
+.final-stats b {
+    display: block;
+    font-size: 1.5rem;
+}
+.final-stats small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+.final-badge {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 16px 0 24px;
+    min-height: 5rem;
+}
+.final-badge .ico {
+    display: block;
+    font-size: 4rem;
+}
+
+/* Badge celebration — a compact banner in the empty strip above the HUD
+   (next to the mute button), so it never covers the text or input area
+   while playing. */
+.celebrate {
+    position: fixed;
+    top: 8px;
+    left: 16px;
+    right: 64px;
+    z-index: 55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    pointer-events: none;
+    opacity: 0;
+}
+.celebrate.show {
+    animation: celebrate 2.4s ease-out forwards;
+}
+.celebrate-badge {
+    font-size: 2.6rem;
+    filter: drop-shadow(0 0 12px var(--accent));
+}
+.celebrate-name {
+    font-size: 1.05rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 6px 16px;
+    border-radius: 999px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Same reasoning as .celebrate above: a small banner in the top strip
+   instead of an overlay on the play area. */
+.toast {
+    position: fixed;
+    top: 8px;
+    left: 16px;
+    right: 64px;
+    z-index: 54;
+    display: flex;
+    justify-content: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--accent);
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 999px;
+    padding: 6px 16px;
+    pointer-events: none;
+    animation: toast 1s ease-out forwards;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-6px);
+    }
+    80% {
+        transform: translateX(6px);
+    }
+}
+@keyframes shake-mini {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-4px);
+    }
+    60% {
+        transform: translateX(4px);
+    }
+}
+@keyframes pulse {
+    to {
+        transform: scale(1.25);
+    }
+}
+@keyframes pulse-cursor {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+@keyframes celebrate {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-15deg);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1.15) rotate(4deg);
+    }
+    35% {
+        transform: scale(1) rotate(0);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+@keyframes toast {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.85);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0) scale(1.05);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-4px) scale(1);
+    }
+}
+
+@media (max-height: 700px) {
+    .text-wrap {
+        height: 26vh;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01s !important;
+    }
+}

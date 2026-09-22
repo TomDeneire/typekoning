@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Typekoning</title>
+        <meta
+            name="description"
+            content="Oefen typen op leuke teksten: juiste letters worden groen, foute rood. Verdien badges en versla je record!"
+        />
+        <link rel="manifest" href="manifest.webmanifest" />
+        <meta name="theme-color" content="#0b3d5c" />
+        <link rel="icon" href="icons/icon-192.png" />
+        <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta name="apple-mobile-web-app-title" content="Typekoning" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <canvas id="fx" aria-hidden="true"></canvas>
+        <button id="mute" class="icon-btn" aria-label="Geluid aan/uit">
+            🔊
+        </button>
+
+        <main id="app">
+            <!-- Start screen -->
+            <section id="screen-start" class="screen active">
+                <h1>⌨️ Typekoning</h1>
+                <p class="sub">
+                    Tik zo snel en juist mogelijk over met leuke teksten!
+                </p>
+
+                <div class="group">
+                    <h2>Hoelang oefen je?</h2>
+                    <div id="durations" class="durations">
+                        <button class="duration active" data-min="1">
+                            1 min
+                        </button>
+                        <button class="duration" data-min="2">2 min</button>
+                        <button class="duration" data-min="3">3 min</button>
+                        <button class="duration" data-min="5">5 min</button>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h2>Moeilijkheid</h2>
+                    <div id="filters" class="filters">
+                        <button class="filter-toggle on" data-filter="digits">
+                            <span>🔢</span>Cijfers
+                        </button>
+                        <button class="filter-toggle on" data-filter="punct">
+                            <span>❗</span>Leestekens
+                        </button>
+                    </div>
+                </div>
+
+                <button id="start" class="big-btn">▶ Start!</button>
+
+                <div class="group">
+                    <h2>Jouw badges</h2>
+                    <div id="badges" class="badges"></div>
+                    <p id="best" class="best"></p>
+                </div>
+            </section>
+
+            <!-- Game screen -->
+            <section id="screen-game" class="screen">
+                <div class="hud">
+                    <div class="stat"><small>WPM</small><b id="wpm">0</b></div>
+                    <div class="timer">
+                        <div id="time-bar"><div id="time-fill"></div></div>
+                        <b id="time">60</b>
+                    </div>
+                    <div class="stat">
+                        <small>Accuraat</small><b id="accuracy">100%</b>
+                    </div>
+                </div>
+
+                <div id="next-badge" class="next-badge"></div>
+
+                <div class="text-wrap">
+                    <div id="text-display" class="text-display"></div>
+                </div>
+
+                <input
+                    id="type-input"
+                    class="type-input"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    autocorrect="off"
+                    spellcheck="false"
+                    aria-label="Typ hier de tekst over"
+                />
+                <p class="tap-hint">Tik hier om te beginnen met typen</p>
+            </section>
+
+            <!-- End screen -->
+            <section id="screen-end" class="screen">
+                <h1>⏰ Tijd is om!</h1>
+                <div class="final">
+                    <b id="final-wpm">0</b><span>woorden per minuut</span>
+                </div>
+                <div class="final-stats">
+                    <div>
+                        <b id="final-accuracy">100%</b><small>accuraat</small>
+                    </div>
+                    <div>
+                        <b id="final-chars">0</b><small>letters juist</small>
+                    </div>
+                    <div><b id="final-errors">0</b><small>foutjes</small></div>
+                </div>
+                <p id="final-record" class="best"></p>
+                <div id="final-badge" class="final-badge"></div>
+                <div class="end-btns">
+                    <button id="again" class="big-btn">🔁 Opnieuw</button>
+                    <button id="menu" class="big-btn secondary">🏠 Menu</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Badge celebration overlay -->
+        <div id="celebrate" class="celebrate" aria-live="polite">
+            <div class="celebrate-badge"></div>
+            <div class="celebrate-name"></div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
